@@ -7,6 +7,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <aside>
+    <div class="side-bar-image">
+      <img src="assets/image/odin-lined.png" alt="Odin logo">
+    </div>
+  </aside> 
+  <header>
+    <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+    Sign up now to get started.
+    </h1>
+    <p>You know you want to.</p>
+  </header> 
+  <main>
+    <section class="form-section">
+      <form id="form-id">
+        <p>Let's do this!</p>
+        <div class="form-row">
+          <div>
+            <label for="fname">FIRST NAME</label>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div>
+            <label for="lname">LAST NAME</label>
+            <input type="text" id="lname" name="lname">
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div>
+            <label for="tel">PHONE NUMBER</label>
+            <input type="tel" id="tel" name="tel">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="pwd">PASSWORD</label>
+          <input type="password" id="pwd" name="pwd">
+        </div>
+        <div>
+          <label for="pwd-confirm">CONFIRM PASSWORD</label>
+          <input type="password" id="pwd-confirm" name="pwd-confirm">
+        </div>
+      </form>
+    </section>
+    <section class="submit-section">
+      <div>
+        <button form="form-id">Create Account</button>
+      </div>
+      <p>Already have an account? Log in</p>
+    </section>
+  </main>
 </body>
 </html>
