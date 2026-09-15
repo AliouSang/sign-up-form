@@ -8,56 +8,65 @@
 </head>
 <body>
   <aside>
-    <div class="side-bar-image">
-      <img src="assets/image/odin-lined.png" alt="Odin logo">
+    <div class="img-container">
+      <img class="logo" src="assets/images/odin-lined.png" alt="odin logo">
+      <p>ODIN</p>
     </div>
+    <p class="photo-credit">
+      Photo by Halie West on
+      <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+    </p>
   </aside> 
-  <header>
-    <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
-    Sign up now to get started.
-    </h1>
-    <p>You know you want to.</p>
-  </header> 
-  <main>
-    <section class="form-section">
-      <form id="form-id">
-        <p>Let's do this!</p>
-        <div class="form-row">
-          <div>
-            <label for="fname">FIRST NAME</label>
-            <input type="text" id="fname" name="fname">
+  <div class="main-container">
+    <header>
+      <h1 class="bold">This is not a real online service! You know you need something <br>like this in your life to help you realize your deepest dreams.<br>
+      Sign up now to get started.
+      </h1>
+      <p class="bold">You know you want to.</p>
+    </header> 
+    <main>
+      <section class="form-section">
+        <form id="form-id">
+          <h2 class="bold">Let's do this!</h2>
+          <div class="form-row">
+            <div>
+              <label for="fname">FIRST NAME</label>
+              <input type="text" id="fname" name="fname">
+            </div>
+            <div>
+              <label for="lname">LAST NAME</label>
+              <input type="text" id="lname" name="lname">
+            </div>
           </div>
-          <div>
-            <label for="lname">LAST NAME</label>
-            <input type="text" id="lname" name="lname">
+          <div class="form-row">
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div>
+              <label for="tel">PHONE NUMBER</label>
+              <input type="tel" id="tel" name="tel">
+            </div>
           </div>
-        </div>
-        <div class="form-row">
-          <div>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email">
+          <div class="form-row">
+            <div>
+              <label for="pwd">PASSWORD</label>
+              <input minlength="8" maxlength="20" type="password" id="pwd" name="pwd">
+            </div>
+            <div>
+              <label for="pwd-confirm">CONFIRM PASSWORD</label>
+              <input type="password" minlength="8" maxlength="20" id="pwd-confirm" name="pwd-confirm">
+            </div>
           </div>
-          <div>
-            <label for="tel">PHONE NUMBER</label>
-            <input type="tel" id="tel" name="tel">
-          </div>
-        </div>
-        <div class="form-row">
-          <label for="pwd">PASSWORD</label>
-          <input type="password" id="pwd" name="pwd">
-        </div>
+        </form>
+      </section>
+      <section class="submit-section">
         <div>
-          <label for="pwd-confirm">CONFIRM PASSWORD</label>
-          <input type="password" id="pwd-confirm" name="pwd-confirm">
+          <button form="form-id">Create Account</button>
         </div>
-      </form>
-    </section>
-    <section class="submit-section">
-      <div>
-        <button form="form-id">Create Account</button>
-      </div>
-      <p>Already have an account? Log in</p>
-    </section>
-  </main>
+        <p>Already have an account? Log in</p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

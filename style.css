@@ -7,12 +7,148 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Norse';
-    src: url('assets/fonts/Norse.woff2') format('woff2'),
-        url('assets/fonts/Norse.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+aside {
+    background-image: url("assets/images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-repeat: no-repeat;
+    padding-top: 10em;
+    background-size: cover;
+    position: center;
+    position: relative;
+}
+
+.img-container {
+    background-color: rgba(89, 109, 72, 0.3);
+    height: 2em;
+    font-family: 'Norse';
+    font-weight: bold;
+    font-size: 5em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    height: 2em;
+}
+
+.img-container p {
+    font-size: 2em;
+}
+
+.photo-credit {
+    background-color: rgba(89, 109, 72, 0.3);
+    color: white;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+}
+
+.photo-credit, a {
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f6f7;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 6rem 0 2rem 10rem;    
+}
+
+h1, h2, header > p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.form-section,
+.submit-section {
+    padding-left: 10rem;
+    padding-top: 1rem;
+}
+
+.form-section {
+    background-color: #fff;
+    padding-bottom: 1rem;
+
+}
+
+.form-section  p {   
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 4rem;
+}
+
+.form-row > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-row input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 0 1px currentColor;
+    border-radius: 5px;
+}
+
+input[type="password"]:user-invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid dodgerblue;
+}
+
+.submit-section {
+    box-shadow: 0 -3px 5px #ccc;
+    padding-top: 1rem;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background-color: #596D48;
+    font-size: 1em;
+    font-weight: 700;
+    margin-block: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 
